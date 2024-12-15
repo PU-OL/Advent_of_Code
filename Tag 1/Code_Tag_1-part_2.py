@@ -6,9 +6,8 @@ list1 = []
 list2 = []
 vorhanden = []
 test = []
-add = []
+mulitplied = 0
 count = 0
-enderbenis = 0
 for line in f:
     line = line.strip().split("   ")
     list1.append(int(line[0]))
@@ -27,7 +26,6 @@ for j in range(len(vorhanden)):
             test.append((vorhanden[j], count))
             count = 0
 for i in range(len(test)):
-    multi = test[0][i] * test[1][i]
-    add.append[multi]
-for i in range(len(add)):
-    
+    multi = test[i][0] * test[i][1]
+    mulitplied = mulitplied + multi
+print(f"Endergebnis: {mulitplied}")
